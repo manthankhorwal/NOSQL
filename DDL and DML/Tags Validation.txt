@@ -1,0 +1,21 @@
+db.createCollection('Tags', {  
+ validator: {
+      $jsonSchema: {
+         bsonType: 'object',
+         required: ['Tag','Products'],
+         properties: {
+            Tag: {
+               bsonType: 'string',
+                description:"tag keywords"
+            },
+          Products:{
+                bsonType: ['array'],
+                  items: {
+                    bsonType: 'string',
+                    description:"ProductIds which will be related to tag"
+                    }
+               }
+         }
+      }
+   }
+});

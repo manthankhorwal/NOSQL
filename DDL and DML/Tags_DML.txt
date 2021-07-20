@@ -1,0 +1,6 @@
+Tag Collection
+{
+{Tag:"white" , Products: ["123v1","123v2","123v3","124v1"]},
+{Tag:"8gb" , Products: ["123v1","123v2","123v3","124v1"]},
+{Tag:"HRXjeans" , Products: ["123v1","123v2","123v3","124v1"]}
+}

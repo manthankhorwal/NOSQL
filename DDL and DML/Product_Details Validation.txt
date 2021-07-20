@@ -1,0 +1,55 @@
+db.createCollection('Product_Details', {  
+ validator: {
+      $jsonSchema: {
+         bsonType: 'object',
+         required: [ 'ProductId', 'VariationId', 'Title', 'Description','Price','Category','Quantity','Product_Images','Available_Variations'],
+         properties: {
+            ProductId: {
+               bsonType: 'string',
+               description:"ProductId of a product ,It will be same for all the variations of particular product"
+            },
+            VariationId: {
+               bsonType: 'string',
+               description:"VariationId of a particular product"
+            },
+            Title: {
+              bsonType: 'string',
+               description:"Name of the product"
+           
+            },
+            Price: {
+               bsonType: 'double',
+               description:"Price of the product"
+           
+            },
+             Category: {
+               bsonType: 'string',
+               description:"Category of the product"
+           
+            },
+            Quantity: {
+               bsonType: 'int',
+               description:"Remaining quantity present in the stocks"
+           
+            },
+            Pdf_link: {
+               bsonType: 'string',
+               description:"User manual of the product"
+           
+            },
+               Description: {
+               bsonType: 'string',
+               description:"Details and specifications of the product"
+           
+            },
+Product_Images: {
+                bsonType: ['array'],
+                  items: {
+                    bsonType: 'string',
+               description:"Url links of product images"
+                    }
+               }
+         }
+      }
+   }
+});

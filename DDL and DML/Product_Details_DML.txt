@@ -1,0 +1,14 @@
+Single object represents one product
+{
+    ProductId:"123",
+    VariationId:"1",
+    Title:"Iphone",
+    Price:1200,
+    Category :"Accessories",
+    Quantity:NumberInt(12),
+    Pdf_link:"www.pdf.com",
+    Description:"Great phone",
+    Product_Images:["www.images.com","www.images.com"]
+}
+
+

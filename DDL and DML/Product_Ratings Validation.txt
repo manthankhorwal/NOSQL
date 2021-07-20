@@ -1,0 +1,31 @@
+db.createCollection('Product_Ratings', {  
+ validator: {
+      $jsonSchema: {
+         bsonType: 'object',
+         required: ['RatingId', 'Ratings'],
+         properties: {
+            RatingId: {
+               bsonType: 'string',
+               description : "Concatenation of productid and VariationId" 
+            },
+ Ratings:{
+                bsonType: ['array'],
+                  items: {
+                    bsonType: 'object',
+                    required:['UserId','Rating'],
+                    properties:{
+                    UserId:{
+                    bsonType:'string',
+                    description : "UserId to identify a particular user" 
+                           },                  
+                     Rating:{
+                    bsonType:'double',
+                    description:"Rating given by the user"
+                           }
+                       }
+                    }
+               }
+         }
+      }
+   }
+});

@@ -1,0 +1,6 @@
+Product_Ratings Collection
+{
+{ RatingId:"123v1" ,Ratings:[{UserId:"123",Rating:3.5},{UserId:"123",Rating:3.5}]},
+{ RatingId:"123v2" ,Ratings:[{UserId:"123",Rating:3.5},{UserId:"123",Rating:3.5}]},
+{ RatingId:"123v3" ,Ratings:[{UserId:"123",Rating:3.5},{UserId:"123",Rating:3.5}]}
+}
